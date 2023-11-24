@@ -6,8 +6,7 @@ const Form = () => {
   const [inputTextArr, setInputTextArr] = useState<string[]>(
     Array(10).fill("")
   );
-  const [imageSrcArr, setImageSrcArr] = useState<string[]>(Array(10).fill(""));
-  const [isSubmitted, setIsSubmitted] = useState<boolean>(false); 
+  const [imageSrcArr, setImageSrcArr] = useState<string[]>(Array(10).fill("")); 
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { tabIndex, value } = e.target;
